@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+body {
+	background-color: #F8FAFB;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 960px;
+	background: white;
+	padding: 20px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 520px) {
+	.container {
+		width: auto;
+	}
+	.box {
+		width: 280px !important;
+		height: 560px !important;
+	}
+	.box .box-item div {
+		font-size: 2.4rem;
+	}
+}
+
+.container a, .container a:hover, .container a:active {
+	color: #31BDEC !important;
+	margin: 0 10px;
+}
+
+.box {
+	width: 560px;
+	height: 280px;
+	margin: 0 auto;
+	border: 12px solid #e09b49;
+	position: relative;
+	background: #e09b49;
+	padding-bottom: 1px;
+	border-radius: 0;
+	box-shadow: 3px 3px 3px #7d4d14;
+}
+
+.box .box-item {
+	border: 1px solid #9c6422;
+	box-sizing: border-box;
+	text-align: center;
+	height: 100%;
+	background: #e09b49;
+	color: #8f532f;
+	cursor: pointer;
+}
+
+.box .box-item div {
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	border-radius: 520px;
+	border: #82531d double 6px;
+	background-color: #aa754f;
+	text-align: center;
+	font: 2.6rem "楷体";
+	font-weight: bold;
+	line-height: 50px;
+	text-shadow: 0px 0px 2px white;
+	box-shadow: 2px 2px 2px black;
+}
+
+.box .box-item div.invert.selected {
+	box-shadow: 0px 0px 3px 3px #ffe6c9;
+}
+
+.box .box-item div.invert[data-role="0"] {
+	color: rgb(144, 11, 11);
+	border-color: rgb(144, 11, 11);
+	background-color: #e4b77c;
+}
+
+.box .box-item div.invert[data-role="1"] {
+	color: rgb(78, 56, 23);
+	border-color: rgb(78, 56, 23);
+	background-color: #e4b77c;
+}
+
+.role-text-0 {
+	color: rgb(144, 11, 11);
+}
+
+.role-text-1 {
+	color: rgb(144, 11, 11);
+}
+
+.start {
+	width: 200px;
+	height: 40px;
+	background: #aa754f;
+	box-shadow: 0 3px 3px #7d4d14;
+	margin: 10px auto;
+	display: block;
+	transition: box-shadow .5s;
+	color: #ffffff;
+	border: 1px solid #6d543a;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.start:hover {
+	box-shadow: 0 3px 3px #000;
+}
+
+.opt-desc {
+	margin: 20px auto;
+}
+
+.opt-desc p {
+	text-indent: 2em;
+	margin-bottom: 4px;
+	color: #999;
+}
+
+.opt-desc .layui-table {
+	width: 120px;
+	margin-left: 2em;
+}
+
+.opt-desc .layui-table td {
+	text-align: center !important;
+	background: white !important;
+}
+
+.kk_step span, .kk_time span {
+	color: orange;
+}
+
+.none {
+	display: none !important;
+}
+/**-------------by layui.css--------------**/
+blockquote, body, button, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6,
+	input, li, ol, p, pre, td, textarea, th, ul {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.layui-col-space1>* {
+	padding: .5px;
+}
+
+.layui-col-xs1, .layui-col-xs10, .layui-col-xs11, .layui-col-xs12,
+	.layui-col-xs2, .layui-col-xs3, .layui-col-xs4, .layui-col-xs5,
+	.layui-col-xs6, .layui-col-xs7, .layui-col-xs8, .layui-col-xs9 {
+	float: left;
+	position: relative;
+	display: block;
+}
+
+.layui-elem-field {
+	border-color: #e6e6e6;
+}
+
+.layui-field-title {
+	margin: 10px 0 20px;
+	border-width: 1px 0 0;
+}
+
+.layui-elem-field {
+	padding: 0;
+	border-style: solid;
+}
+
+.layui-elem-field legend {
+	margin-left: 20px;
+	padding: 0 10px;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.layui-elem-quote {
+	margin-bottom: 10px;
+	padding: 15px;
+	line-height: 22px;
+	border-left: 5px solid #009688;
+	border-radius: 0 2px 2px 0;
+	background-color: #f2f2f2;
+}
