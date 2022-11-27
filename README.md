@@ -36,3 +36,13 @@ $(function(){
 ```
 
 
+#### 更多
+
+[原创]源码-更多地址
+<a href="https://github.com/lvbee/ChessInvert" target="_blank">Github仓库</a>
+、
+<a href="https://gitee.com/2925001332/ChessInvert" target="_blank">Gitee仓库</a>
+、
+<a href="https://www.jq22.com/jquery-info24485" target="_blank">效果预览</a>
+
+
