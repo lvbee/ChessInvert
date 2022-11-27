@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,target-densitydpi=high-dpi,user-scalable=yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="keywords" content="象棋翻翻棋,休闲,对战,娱乐,小游戏,在线" />
+<meta name="description" content="象棋翻翻棋,休闲,对战,娱乐,小游戏,在线" />
+<meta name="author" content="百年蜜蜂" />
+<meta name="Copyright" content="百年蜜蜂" />
+<meta name="renderer" content="webkit">
+<meta name="application-name" content="象棋翻翻棋" />
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>中国象棋翻翻棋</title>
+<link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+	<div id="main-layout" class="main-layout">
+		<div class="container">
+			<blockquote class="layui-elem-quote none1">
+				[原创]源码：
+				<a href="https://github.com/lvbee/ChessInvert" target="_blank">Github仓库</a>
+				、
+				<a href="https://gitee.com/2925001332/ChessInvert" target="_blank">Gitee仓库</a>
+				、
+				<a href="https://www.jq22.com/jquery-info24485" target="_blank">效果预览</a>
+			</blockquote>
+			<div class="content">
+				<div data-chess></div>
+				<div>
+					<button type="button" class="start">开始游戏</button>
+				</div>
+			</div>
+			<div class="opt-desc">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>游戏说明</legend>
+				</fieldset>
+				<p>象棋翻翻棋是由象棋变化而来，游戏时，所有的棋子都会翻过来，成为暗棋。</p>
+				<p>翻翻棋将大型的象棋对战，变为休闲+对战的娱乐性较强的游戏，加上运气的成份，越来越受玩家们喜欢。</p>
+				<p>玩法：2人对战游戏，当把对方的棋子全部吃掉的时候，则为胜利。</p>
+				<br />
+				<p>吃法说明：棋子由大到小排列：帅（将），士 ， 相（象），车 ，马 ，炮 ，兵（卒）。 较大的棋子可以吃掉较小的棋子，但是帅（将）不能吃兵（卒），反而被兵（卒）吃。 其中一方的棋子包括：帅（将）一个，士，相（象），马，车，炮，均为2个，兵（卒）为5个。</p>
+				<p>棋子走法：炮只能隔子吃，即中间必须隔一个子可以吃掉任何棋子，但炮走棋无吃子时仍旧是一格一格移动。其他棋子只能横竖向移动一格。</p>
+				<br />
+				<p>
+					友情链接：
+					<a href="https://lvbee.com.cn/" target="_blank">lvbee.com.cn</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+<script src="./js/index.js"></script>
+<script type="text/javascript">
+	function layui_main() {
+		var $btn = $('.start');
+
+		var myCNChessInvert = new CNChessInvert('[data-chess]', $btn, true);
+		myCNChessInvert.restart();
+		$btn.click(function() {
+			myCNChessInvert.restart();
+		});
+	}
+
+	$(layui_main);
+</script>
+</html>
