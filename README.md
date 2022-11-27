@@ -6,7 +6,7 @@
 
 #### 效果预览
 
-![效果预览]([/assets/index.jpg](https://github.com/lvbee/ChessInvert/blob/main/index.jpg))
+![效果预览](https://github.com/lvbee/ChessInvert/blob/d7eda12e1df333a79c5f4ffdcb8f7941adeb23fe/index.jpg)
 
 #### 使用说明
 
